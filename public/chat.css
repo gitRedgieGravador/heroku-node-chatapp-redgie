@@ -223,3 +223,8 @@ span {
     position: relative;
     z-index: 1;
 }
+
+#head {
+    height: 5%;
+    background-color: #000;
+}
