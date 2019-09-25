@@ -1,4 +1,4 @@
-    * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -230,8 +230,9 @@ span {
     position: sticky;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
-    height: 20%;
+    height: 10%;
     background-color: white;
     border: #000;
     padding-left: 10%;
     padding-right: 20%;
+}
