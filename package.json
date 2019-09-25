@@ -1,0 +1,29 @@
+{
+    "name": "heroku-node-chatapp-redgie",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gitRedgieGravador/heroku-node-chatapp-redgie.git"
+    },
+    "keywords": [
+        "node",
+        "heroku"
+    ],
+    "author": "redgie",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gitRedgieGravador/heroku-node-chatapp-redgie/issues"
+    },
+    "homepage": "https://github.com/gitRedgieGravador/heroku-node-chatapp-redgie#readme",
+    "engines": {
+        "node": "10.15"
+    },
+    "dependencies": {
+        "express": "^4.15.2"
+    }
+}
