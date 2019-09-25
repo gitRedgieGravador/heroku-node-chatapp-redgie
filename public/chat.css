@@ -13,7 +13,7 @@ form {
     background: #000;
     padding: 3px;
     position: fixed;
-    bottom: 22%;
+    bottom: 12%;
     width: 50%;
     right: 10%;
 }
@@ -210,8 +210,6 @@ span {
 
 #logout {
     position: relative;
-    /* margin-bottom: 10%; */
-    /* margin-right: 1%; */
     margin-left: 90%;
 }
 
@@ -230,7 +228,7 @@ span {
     position: sticky;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
-    height: 10%;
+    /*height: 10%;*/
     background-color: white;
     border: #000;
     padding-left: 10%;
