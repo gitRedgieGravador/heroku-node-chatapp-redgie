@@ -6,8 +6,7 @@ var fs = require('fs');
 
 var port = process.env.PORT || 3000;
 var users = [];
-var toDisconnect = [];
-
+var actualuser = '';
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
@@ -31,7 +30,7 @@ io.on('connection', function(socket) {
     socket.on('online', function(data) {
         if (!users.includes(data.username)) {
             users.push(data);
-            //toDisconnect.push({ username: data.username, source: data.source })
+            actualuser = data.username;
         }
         io.emit('online', users);
     });
@@ -53,17 +52,16 @@ io.on('connection', function(socket) {
         }
         io.emit('logout', users)
     });
+    socket.once('disconnect', function() {
+        for (let i = 0; i < users.length; ++i) {
+            if (users[i].username == actualuser) {
+                users.splice(i, 1);
+            }
+        }
+        io.emit('logout', users)
+    })
+
 });
-
-var myVar = setInterval(myTimer, 1000);
-
-function myTimer() {
-    var d = new Date();
-    var hour = d.getHours();
-    if ((hour * 1) == 23) {
-        users = [];
-    }
-}
 
 http.listen(port, function() {
     console.log('listening on *:' + port);
