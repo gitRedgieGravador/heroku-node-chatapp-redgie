@@ -38,10 +38,10 @@ $(function() {
         }
     })
 
-    $("#logout").click(function() {
-        socket.emit('logout', usernamei)
-        location.reload();
-    })
+    // $("#logout").click(function() {
+    //     socket.emit('logout', usernamei)
+    //     location.reload();
+    // })
 
     $('form').submit(function(event) {
         event.preventDefault()

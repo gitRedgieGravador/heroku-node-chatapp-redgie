@@ -44,14 +44,14 @@ io.on('connection', function(socket) {
     });
 
 
-    socket.on('logout', function(data) {
-        for (let i = 0; i < users.length; ++i) {
-            if (users[i].username == data) {
-                users.splice(i, 1);
-            }
-        }
-        io.emit('logout', users)
-    });
+    // socket.on('logout', function(data) {
+    //     for (let i = 0; i < users.length; ++i) {
+    //         if (users[i].username == data) {
+    //             users.splice(i, 1);
+    //         }
+    //     }
+    //     io.emit('logout', users)
+    // });
     socket.once('disconnect', function() {
         for (let i = 0; i < users.length; ++i) {
             if (users[i].username == actualuser) {
