@@ -55,6 +55,16 @@ io.on('connection', function(socket) {
     });
 });
 
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    var hour = d.getHours();
+    if ((hour * 1) == 23) {
+        users = [];
+    }
+}
+
 http.listen(port, function() {
     console.log('listening on *:' + port);
 });
