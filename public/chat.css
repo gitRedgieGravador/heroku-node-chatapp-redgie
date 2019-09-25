@@ -225,6 +225,13 @@ span {
 }
 
 #head {
-    height: 5%;
-    background-color: #000;
+    top: 0;
+    position: sticky;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+    height: 10%;
+    background-color: white;
+    border: #000;
+    padding-left: 20%;
+    padding-right: 20%;
 }
