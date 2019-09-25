@@ -210,8 +210,8 @@ span {
 
 #logout {
     position: relative;
-    margin-bottom: 10%;
-    margin-left: 15%;
+    /* margin-bottom: 10%; */
+    margin-right: 15%;
 }
 
 .chatAvatarL,
@@ -229,9 +229,9 @@ span {
     position: sticky;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
-    height: 10%;
+    height: 20%;
     background-color: white;
     border: #000;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-right: 20%;
 }
